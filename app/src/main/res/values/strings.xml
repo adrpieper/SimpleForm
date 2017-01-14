@@ -8,4 +8,10 @@
     <string name="sex">Płęć</string>
     <string name="sex_male">M</string>
     <string name="sex_female">F</string>
+    <string name="address">Adres</string>
+    <string name="street">Ulica</string>
+    <string name="house_number">Numer domu</string>
+    <string name="post_code">Kod pocztowy</string>
+    <string name="city">Miasto</string>
+    <string name="state">Państwo</string>
 </resources>

@@ -32,7 +32,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/new_user">
+        android:layout_below="@+id/new_user"
+        android:layout_above="@+id/confirm_button">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -57,7 +58,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:text="@string/name"
                 android:ems="10"
                 android:id="@+id/user_name_edit_text"
                 android:singleLine="true" />
@@ -72,7 +72,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:text="@string/surname"
                 android:ems="10"
                 android:id="@+id/user_surname_edit_text"
                 android:singleLine="true" />
@@ -114,6 +113,77 @@
                     android:id="@+id/sex_male"
                     android:layout_weight="1" />
             </RadioGroup>
+
+            <TextView
+                android:text="@string/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address" />
+
+            <TextView
+                android:text="@string/street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/street" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/street_edit_text" />
+
+            <TextView
+                android:text="@string/house_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/house_number" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/house_number_edit_text" />
+
+            <TextView
+                android:text="@string/post_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/post_code" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:id="@+id/post_code_edit_text" />
+
+            <TextView
+                android:text="@string/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/city" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/city_edit_text" />
+
+            <TextView
+                android:text="@string/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/state" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/state_edit_text" />
 
         </LinearLayout>
     </ScrollView>
