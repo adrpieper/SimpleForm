@@ -74,7 +74,9 @@ public class FromActivity extends Activity {
         if (!password.equals(confirmPassword)) {
             return  false;
         }
-
+        if (sexRadioGroup.getCheckedRadioButtonId() == -1) {
+            return false;
+        }
 
 
 
