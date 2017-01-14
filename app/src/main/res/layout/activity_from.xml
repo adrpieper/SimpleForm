@@ -212,10 +212,47 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
+                android:inputType="phone"
                 android:ems="10"
                 android:id="@+id/phone_number_edit_text" />
 
+            <TextView
+                android:text="@string/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/password_edit_text" />
+
+            <TextView
+                android:text="@string/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirm_password" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/confirm_password_edit_text" />
+
+            <TextView
+                android:text="@string/options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/options" />
+
+            <CheckBox
+                android:text="@string/newsletter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/newsletter_check_box" />
 
         </LinearLayout>
     </ScrollView>

@@ -17,4 +17,8 @@
     <string name="contact_data">Dane kontaktowe</string>
     <string name="email">e-mail</string>
     <string name="phone_number">Telefon</string>
+    <string name="password">Hasło</string>
+    <string name="confirm_password">Powtórz hasło</string>
+    <string name="options">Opcje</string>
+    <string name="newsletter">Newslettera</string>
 </resources>
