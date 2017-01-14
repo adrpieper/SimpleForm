@@ -69,6 +69,13 @@ public class FromActivity extends Activity {
             return false;
         }
 
+        String password = passwordEditText.getText().toString();
+        String confirmPassword = confirmPasswordEditText.getText().toString();
+        if (!password.equals(confirmPassword)) {
+            return  false;
+        }
+
+
 
 
         return true;
