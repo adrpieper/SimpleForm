@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_user">New User</string>
+    <string name="user_data">User data</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="birth_date">Birth date</string>
+    <string name="sex">Gender</string>
+    <string name="address">Address</string>
+    <string name="street">Street</string>
+    <string name="house_number">House number</string>
+    <string name="post_code">Post code</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="contact_data">Contact data</string>
+    <string name="phone_number">Phone</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="options">Options</string>
+
+</resources>
