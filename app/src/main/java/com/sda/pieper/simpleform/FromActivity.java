@@ -8,6 +8,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class FromActivity extends Activity {
 
@@ -56,12 +57,20 @@ public class FromActivity extends Activity {
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                validateData();
+                if (!validateData()){
+                    Toast.makeText(FromActivity.this, "Nie wszystkie pola są poprawnie wypełnione", Toast.LENGTH_SHORT).show();
+                }
             }
         });
-    
     }
 
-    private void validateData() {
+    private boolean validateData() {
+        if (userNameEditText.getText().toString().isEmpty()) {
+            return false;
+        }
+
+
+
+        return true;
     }
 }   
