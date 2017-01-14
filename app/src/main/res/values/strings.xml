@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SimpleForm</string>
+    <string name="new_user">Nowy Użytkownik</string>
+    <string name="user_data">Dane Użytkownika</string>
+    <string name="name">Umię</string>
+    <string name="surname">Nazwisko</string>
+    <string name="birth_date">Data urodzenia</string>
+    <string name="sex">Płęć</string>
 </resources>
