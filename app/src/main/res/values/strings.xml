@@ -14,4 +14,7 @@
     <string name="post_code">Kod pocztowy</string>
     <string name="city">Miasto</string>
     <string name="state">Państwo</string>
+    <string name="contact_data">Dane kontaktowe</string>
+    <string name="email">e-mail</string>
+    <string name="phone_number">Telefon</string>
 </resources>

@@ -185,6 +185,38 @@
                 android:ems="10"
                 android:id="@+id/state_edit_text" />
 
+            <TextView
+                android:text="@string/contact_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_data" />
+            <TextView
+                android:text="@string/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/email_edit_text" />
+
+            <TextView
+                android:text="@string/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone_number" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/phone_number_edit_text" />
+
+
         </LinearLayout>
     </ScrollView>
 
