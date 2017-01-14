@@ -3,6 +3,8 @@ package com.sda.pieper.simpleform;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -58,11 +60,14 @@ public class FromActivity extends Activity {
         confirmPasswordEditText = (EditText) findViewById(R.id.confirm_password_edit_text);
         newsletterCheckBox = (CheckBox) findViewById(R.id.newsletter_check_box);
 
-        Button confirmButton = (Button) findViewById(R.id.confirm_button);
+        final Button confirmButton = (Button) findViewById(R.id.confirm_button);
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (!validateData()){
+
+                    Animation animation = AnimationUtils.loadAnimation(FromActivity.this, R.anim.example_animation);
+                    confirmButton.startAnimation(animation);
                     Toast.makeText(FromActivity.this, "Nie wszystkie pola są poprawnie wypełnione", Toast.LENGTH_SHORT).show();
                 }
             }
