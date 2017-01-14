@@ -10,6 +10,11 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 public class FromActivity extends Activity {
 
     private EditText userNameEditText;
@@ -78,7 +83,12 @@ public class FromActivity extends Activity {
             return false;
         }
 
-
+        SimpleDateFormat format = new SimpleDateFormat("dd.mm.yyyy");
+        try {
+            format.parse(userBirthDateEditText.getText().toString());
+        } catch (ParseException e) {
+            return false;
+        }
 
         return true;
     }
