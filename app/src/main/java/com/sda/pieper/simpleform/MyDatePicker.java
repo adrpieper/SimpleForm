@@ -4,11 +4,12 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 
 public class MyDatePicker extends TextView {
-
+    private SimpleDateFormat format;
     private Calendar calendar;
 
     public MyDatePicker(Context context) {
@@ -33,5 +34,7 @@ public class MyDatePicker extends TextView {
 
     private void init() {
         calendar = Calendar.getInstance();
+        format = new SimpleDateFormat("dd-mm-yyyy");
+
     }
 }
