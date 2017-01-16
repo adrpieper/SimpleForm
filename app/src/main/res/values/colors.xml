@@ -6,4 +6,7 @@
 
     <color name="buttonPressedColor">#FF0000</color>
     <color name="buttonPressedDefault">#00FF00</color>
+    <color name="buttonDisable">#4000FF00</color>
+    <color name="gradientStart">#A0AFAFAF</color>
+    <color name="gradientEnd">#40000000</color>
 </resources>
