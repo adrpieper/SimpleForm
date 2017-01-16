@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+     android:shape="oval"
+    >
     <gradient
         android:angle="45"
         android:startColor="@color/gradientStart"
         android:centerColor="#FFFFFF"
         android:endColor="@color/gradientEnd" />
+
+    <padding android:bottom="8dp"
+        android:left="8dp"
+        android:right="8dp"
+        android:top="8dp"/>
+
+    <corners android:radius="8dp" />
+    <stroke android:width="2dp"
+        android:color="#000000"
+        android:dashGap="16dp"
+        android:dashWidth="32dp"
+        />
 
 </shape>
