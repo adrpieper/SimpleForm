@@ -1,9 +1,12 @@
 package com.sda.pieper.simpleform;
 
+import android.app.DatePickerDialog;
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+import android.widget.DatePicker;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
@@ -48,5 +51,20 @@ public class MyDatePicker extends TextView {
 
     private void showDatePickerDialog(){
         Log.d("My Date Picker", "showDatePickerDialog");
+        int year = calendar.get(Calendar.YEAR);
+        int month = calendar.get(Calendar.MONTH);
+        int day = calendar.get(Calendar.DAY_OF_MONTH);
+
+        DatePickerDialog datePickerDialog = new DatePickerDialog(getContext(), createListener(), year, month, day);
+        datePickerDialog.show();
+    }
+
+    private DatePickerDialog.OnDateSetListener createListener() {
+        return new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+
+            }
+        };
     }
 }
