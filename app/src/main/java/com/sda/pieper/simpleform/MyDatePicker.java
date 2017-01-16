@@ -4,8 +4,12 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
+import java.util.Calendar;
+
 
 public class MyDatePicker extends TextView {
+
+    private Calendar calendar;
 
     public MyDatePicker(Context context) {
         super(context);
@@ -28,5 +32,6 @@ public class MyDatePicker extends TextView {
     }
 
     private void init() {
+        calendar = Calendar.getInstance();
     }
 }
