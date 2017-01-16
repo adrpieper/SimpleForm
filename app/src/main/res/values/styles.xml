@@ -6,11 +6,15 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-
+        <!-- Ta linia aplikuje styl MyEditText dla wszystkich kontrolek EditText w aplikacji-->
+        <item name="android:editTextStyle">@style/MyEditText</item>
+        <item name="android:textViewStyle">@style/MyEditText</item>
     </style>
 
     <style name="MyEditText" parent="Widget.AppCompat.EditText">
         <item name="android:background">@drawable/background_gradient</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:padding">8dp</item>
     </style>
 
     />

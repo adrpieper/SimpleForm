@@ -61,7 +61,6 @@
                 android:inputType="textPersonName"
                 android:ems="10"
                 android:id="@+id/user_surname_edit_text"
-                android:singleLine="true"
                 style="@style/MyEditText" />
 
             <TextView
@@ -76,7 +75,8 @@
                 android:inputType="date"
                 android:ems="10"
                 android:id="@+id/user_birth_date_edit_text"
-                style="@style/MyEditText" />
+                style="@style/MyEditText"
+                android:background="@drawable/button_disabled" />
 
             <TextView
                 android:text="@string/sex"
