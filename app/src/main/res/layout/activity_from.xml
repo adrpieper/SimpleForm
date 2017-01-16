@@ -69,6 +69,11 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/user_birth_date" />
 
+            <com.sda.pieper.simpleform.MyDatePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/view" />
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

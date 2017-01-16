@@ -34,7 +34,7 @@ public class MyDatePicker extends TextView {
 
     private void init() {
         calendar = Calendar.getInstance();
-        format = new SimpleDateFormat("dd-mm-yyyy");
-
+        format = new SimpleDateFormat("dd-MM-yyyy");
+        setText(format.format(calendar.getTime()));
     }
 }
