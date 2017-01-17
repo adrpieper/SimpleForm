@@ -63,8 +63,13 @@ public class MyDatePicker extends TextView {
         return new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-
+                calendar.set(year, month, day);
+                setText(format.format(calendar.getTime()));
             }
         };
+    }
+
+    public Calendar getCalendar() {
+        return calendar;
     }
 }
