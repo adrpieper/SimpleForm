@@ -21,7 +21,7 @@ public class FromActivity extends Activity {
 
     private EditText userNameEditText;
     private EditText userSurnameEditText;
-    private EditText userBirthDateEditText;
+    private MyDatePicker birthDatePicker;
     private RadioGroup sexRadioGroup;
     private RadioButton sexFemaleRadioButton;
     private RadioButton sexMaleRadioButton;
@@ -43,7 +43,7 @@ public class FromActivity extends Activity {
 
         userNameEditText = (EditText) findViewById(R.id.user_name_edit_text);
         userSurnameEditText = (EditText) findViewById(R.id.user_surname_edit_text);
-        userBirthDateEditText = (EditText) findViewById(R.id.user_birth_date_edit_text);
+        birthDatePicker = (MyDatePicker) findViewById(R.id.date_picker);
         sexRadioGroup = (RadioGroup) findViewById(R.id.sex_radio_group);
 
         sexFemaleRadioButton = (RadioButton) findViewById(R.id.sex_female);
@@ -88,12 +88,6 @@ public class FromActivity extends Activity {
             return false;
         }
 
-        SimpleDateFormat format = new SimpleDateFormat("dd.mm.yyyy");
-        try {
-            format.parse(userBirthDateEditText.getText().toString());
-        } catch (ParseException e) {
-            return false;
-        }
 
         return true;
     }
