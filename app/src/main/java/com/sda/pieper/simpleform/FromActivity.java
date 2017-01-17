@@ -72,6 +72,9 @@ public class FromActivity extends Activity {
                 }
             }
         });
+
+        // Tutaj mogę wygodnie ustawić datę dzień, miesiąc, rok
+        birthDatePicker.setDate(1,1,2017);
     }
 
     private boolean validateData() {

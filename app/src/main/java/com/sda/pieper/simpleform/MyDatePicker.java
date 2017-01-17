@@ -63,10 +63,17 @@ public class MyDatePicker extends TextView {
         return new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-                calendar.set(year, month, day);
-                setText(format.format(calendar.getTime()));
+                // Tutaj muszę przesunąć miesiąc o 1, ponieważ DatePicke indeksuje miesiace od 0 ( 0 - styczeń),
+                // a metoda setDate od 1
+                setDate(day, month+1, year);
             }
         };
+    }
+
+    public void setDate(int day, int month, int year) {
+        // Tutaj muszę przesunąć miesiąc o 1, ponieważ calendar indeksuje miesiace od 0 ( 0 - styczeń)
+        calendar.set(year,month-1,day);
+        setText(format.format(calendar.getTime()));
     }
 
     public Calendar getCalendar() {
