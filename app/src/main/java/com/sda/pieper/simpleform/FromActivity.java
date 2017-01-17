@@ -88,6 +88,11 @@ public class FromActivity extends Activity {
             return false;
         }
 
+        Calendar pickedDate = birthDatePicker.getCalendar();
+        Calendar currentDate = Calendar.getInstance();
+        if (currentDate.before(pickedDate)) {
+            return false;
+        }
 
         return true;
     }
